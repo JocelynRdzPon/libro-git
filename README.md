@@ -1,8 +1,10 @@
 
  
-
+### Jocelyn Rodriguez Ponce 18100229 <br><br>
 # **EJERCICIOS UNIDAD 1**
-<br><br>
+
+
+----------------
   ## **Ejercicios de creación y actualización de repositorios** <br> <br>
 
 -------------------
@@ -705,7 +707,72 @@ $ git push origin master
 $ git clone https://github.com/AngelSalazarRochaITNL/Libro-git.git
 ```
 3. Añadir el fichero autores.txt que contenga el nombre del usuario y su correo electrónico.
+```
+$ vi autores.txt
+
+$ cat autores.txt
+Jocelyn Rodriguez Ponce jocerdzp26@gmail.com
+```
 
 4. Añadir los cambios a la zona de intercambio temporal.
+
+```
+$ git add .
+```
 5. Hacer un commit con el mensaje “Añadido autor.”
+```
+$ git commit -m "Añadido autor"
+```
 6. Subir los cambios al repositorio remoto.
+```
+$ git push origin master
+```
+>![Imagen](./IMAGENES/EJ5-3a.png "Ejercicio 6")<br><br>
+
+>![Imagen](./IMAGENES/EJ5-3b.png "Ejercicio 6")<br><br>
+
+---------------------
+## Ejercicio 4 <br>
+----------------------
+1. Hacer una bifurcación del repositorio remoto asalber/libro-git en GitHub.
+
+
+2. Clonar el repositorio creado en la cuenta de GitHub del usuario.
+```
+$ git clone https://github.com/JocelynRdzPon/libro-git-1.git
+```
+3. Crear una nueva rama autoria y activarla.
+```
+$ cd libro-git-1
+$ git checkout -b autoria
+```
+4. Añadir el nombre del usuario y su correo al fichero autores.txt.
+```
+ $ vi autores.txt
+ 
+ $ cat autores.txt
+ Alfredo Sánchez Alberca (asalber@ceu.es)       
+ Jocelyn Rodriguez Ponce (jocerdzp26@gmail.com).
+```
+5. Añadir los cambios a la zona de intercambio temporal.
+```
+$ git add .
+```
+
+6. Hacer un commit con el mensaje “Añadido nuevo autor.”
+```
+$ git commit -m "Añadido nuevo  autor"
+```
+7. Subir los cambios de la rama autoria al repositorio remoto en GitHub.
+```
+$ git push origin autoria
+```
+8. Hacer un Pull Request de los cambios en la rama autoria.
+
+>![Imagen](./IMAGENES/EJ5-4c.png "Ejercicio 6")<br><br>
+
+Resultados
+
+>![Imagen](./IMAGENES/EJ5-4a.png "Ejercicio 6")<br><br>
+
+>![Imagen](./IMAGENES/EJ5-4b.png "Ejercicio 6")<br><br>
